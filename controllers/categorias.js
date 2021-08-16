@@ -1,9 +1,6 @@
 const { response } = require("express");
 const { Categoria } = require('../models')
 
-// TODO : TAREA
-// obtenerCategorias - paginado - total - populate 
-// (método propio de mongoose, para que aparezcan datos del registro)
 const obtenerCategorias = async (req, res = response) => {
     const { limite = 5, desde = 0 } = req.query
     const query = { estado: true }
